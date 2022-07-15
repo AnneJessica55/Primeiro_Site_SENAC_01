@@ -176,7 +176,6 @@ footer{
     background: var(--cor1);
     justify-content: center;
     align-items: center;
-
 }
 footer > address{
     text-align: center;
