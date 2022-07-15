@@ -72,11 +72,12 @@ nav > a:hover{
 }
 main{
     background: var(--cor000);
-    width: 85vw;
-    min-height:80vh;
+    width: 100vw;
+    max-width: 918px;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    flex-wrap: wrap;
 }
 main > h1 {
     font-family: var(--font_master);
@@ -88,20 +89,21 @@ main > h1 {
 }
 .conteiner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row;
     width:100%;
-    min-height:20vh;
-    box-sizing: border-box;
     padding: 0 0 100px ;
     flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
 }
 .projetos{
     width: 23%;
+    min-width:300px;
     box-shadow: rgba(102, 102, 102, 0.508);
     border-radius: 15px 0 15px;
     border: dashed var(--cor00);
-    padding: 25px;
+    padding: 25px ;
     box-sizing: border-box;
 }
 .projetos  a{
@@ -111,6 +113,7 @@ main > h1 {
 }
 .inspiration{
     width: 23%;
+    min-width:300px;
     box-shadow: rgba(102, 102, 102, 0.508);
     border-radius: 15px 0 15px;
     border: dashed var(--cor00);
@@ -119,6 +122,7 @@ main > h1 {
 }
 .hability{
     width: 20%;
+    min-width:300px;
     box-sizing: content-box;
     box-shadow: rgba(102, 102, 102, 0.508);
     border-radius: 15px 0 15px;
@@ -151,6 +155,7 @@ main > h1 {
 }
 .contact{
     width: 20%;
+    min-width:300px;
     box-sizing: content-box;
     box-shadow: rgba(102, 102, 102, 0.508);
     border-radius: 15px 0 15px;
