@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,800;1,900&display=swap');
+
+:root{
+    --cor000:white;
+    --cor00:#0A122A;
+    --cor1:#2176AE;
+    --cor2:#57B8FF;
+    --cor3:#1CFEBA;
+    --cor4:#95F2D9;
+    --font_text:'Nunito', cursive;
+    --font_title: 'Montserrat', cursive;
+    --font_master: 'Grandstander', cursive;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+header{
+    display: flex;
+    background: linear-gradient( to bottom, var(--cor2), var(--cor1));
+width:100vw;
+height:10vh;
+box-shadow: 1px 1px 8px #0d2d43bd;
+margin: 0 auto;
+justify-content: space-between;
+}
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font_master);
+    color: var(--cor000);
+    text-shadow: 1px 1px rgba(99, 99, 99, 0.601);
+   
+    
+}
+header > .logo{
+    float: right;
+    height:100%;
+}
+nav{
+    width: 100vw;
+    font-family: var(--font_text);
+    background-color: var(--cor1);
+    box-shadow: 1px 1px 8px #0d2d43bd;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+nav > a{
+    width: 50px;
+    text-decoration: none;
+    color: var(--cor000);
+    font-weight: 400;
+    justify-content: center;
+    padding-right: 30px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+nav > a:hover{
+    font-weight: 900;
+    background: var(--cor000);
+    color: var(--cor1);
+    text-align: center;
+}
+main{
+    background: var(--cor000);
+    width: 85vw;
+    height:80vh;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+main > h1 {
+    font-family: var(--font_master);
+    color:  var(--cor00);
+    text-align: center;
+    padding: 50px;
+    display: flex;
+
+}
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+    height:20vh;
+    margin
+}
+.projetos{
+    width: 20%;
+    height:30vh;
+    box-shadow: rgba(102, 102, 102, 0.508);
+    border-radius: 15px 0 15px;
+    border: dashed var(--cor00);
+    padding:0 25px;
+}
+.projetos > a{
+    color: var(--cor00);
+    text-decoration: dotted;
+}
+.inspiration{
+    width: 20%;
+    height:30vh;
+    box-shadow: rgba(102, 102, 102, 0.508);
+    border-radius: 15px 0 15px;
+    border: dashed var(--cor00);
+    padding:0 25px;
+}
+.hability{
+    width: 20%;
+    height:30vh;
+    box-shadow: rgba(102, 102, 102, 0.508);
+    border-radius: 15px 0 15px;
+    border: dashed var(--cor00);
+    padding:0 25px;
+}
+.hability ul li{
+    list-style: inside;
+    font-family: var(--font_text);
+    color:var(--cor00);
+    text-align: justify;
+    padding-top:10px;
+    
+}
+.conteiner  h3 {
+    text-align: center;
+    color: var(--cor1);
+    font-family: var(--font_title);
+    font-weight: 900;
+
+
+}
+.conteiner p{
+    font-family: var(--font_text);
+    color:var(--cor00);
+    text-indent: 25px;
+    text-align: justify;
+    padding-top:10px;
+    vertical-align: middle;
+}
+.contact{
+    width: 20%;
+    height:30vh;
+    box-shadow: rgba(102, 102, 102, 0.508);
+    border-radius: 15px 0 15px;
+    border: dashed var(--cor00);
+    padding:0 25px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+.contact > span{
+    padding-top:50px;
+    font-family: var(--font_text);
+    color: #0A122A;
+}
+.wtpp{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    background: var(--cor1);
+    justify-content: center;
+
+}
+footer > address{
+    text-align: center;
+    font-family: var(--font_text);
+    color:var(--cor000);
+}
+
+
